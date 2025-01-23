@@ -20,7 +20,7 @@
 
 #### Notice
 
-The reader is expected to run be using the Bash shell whether they are on MacOS, Linux, or Windows.
+The reader is expected to running the Bash shell whether they are on MacOS, Linux, or Windows.
 
 #### Diretory Setup
 

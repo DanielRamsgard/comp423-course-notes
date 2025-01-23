@@ -1,6 +1,7 @@
 # Setting up a dev container for Rust
 
 * Primary author: [Daniel Ramsgard](https://github.com/DanielRamsgard)
+* Reviewer: [Mani Pourfazli](https://github.com/manip1384)
 
 ### Prerequisites
 

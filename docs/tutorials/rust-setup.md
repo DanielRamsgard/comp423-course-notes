@@ -47,8 +47,9 @@ The reader is expected to run be using the Bash shell whether they are on MacOS,
 
 #### Opening in VS Code
 
-1. If you have VS Code command line tools installed, you may navigate to your root project diretory and run `code .`, which will open the working directory in VS Code. If you do not have VS Code command line tools installed, you may open the directory through the VS Code user-interface.
-2. VS Code should prompt you to open the Docker container associated with the file inside the `.devcontainer` directory. Follow the instructions to open the Docker container.
+1. Run `cd ..` to return to the root directory of your project.
+2. If you have VS Code command line tools installed, you may navigate to your root project diretory and run `code .`, which will open the working directory in VS Code. If you do not have VS Code command line tools installed, you may open the directory through the VS Code user-interface.
+3. VS Code should prompt you to open the Docker container associated with the file inside the `.devcontainer` directory. Follow the instructions to open the Docker container.
 
 #### Create Rust File
 
@@ -56,6 +57,12 @@ The reader is expected to run be using the Bash shell whether they are on MacOS,
 2. Open the newly created file in VS Code and paste in the following code:
 ```rust
 fn main() {
-    println("Hello COMP423");
+    println!("Hello COMP423");
 }
 ```
+
+#### Compile and run
+
+1. Compile your new rust file with the following command `rustc main.rs`.
+2. Run your compiled rust file with the following command `./main`.
+3. You should now see the standard output: `Hello COMP423`.

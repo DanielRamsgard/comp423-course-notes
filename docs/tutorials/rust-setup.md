@@ -19,7 +19,7 @@
 3. Docker Mental Model
 
 ### Steps
-
+<!-- Maybe also add a git repo setup section since it said that in the instructions -->
 #### Notice
 
 The reader is expected to running the Bash shell whether they are on MacOS, Linux, or Windows.

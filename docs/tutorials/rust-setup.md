@@ -5,6 +5,7 @@
 
 ### Prerequisites
 
+<!-- Maybe make the headings a little bit bigger to be different than the size of the font of the actual text -->
 #### Prerequisite Installations
 
 1. Docker Desktop
@@ -53,7 +54,7 @@ The reader is expected to running the Bash shell whether they are on MacOS, Linu
 3. VS Code should prompt you to open the Docker container associated with the file inside the `.devcontainer` directory. Follow the instructions to open the Docker container.
 
 #### Create Rust File
-
+<!-- Maybe show how to open a file in VS Code if the user doesn't know how to -->
 1. Create the rust file by running the command `touch main.rs`.
 2. Open the newly created file in VS Code and paste in the following code:
 ```rust

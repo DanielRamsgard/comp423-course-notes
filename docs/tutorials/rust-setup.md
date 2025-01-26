@@ -37,19 +37,10 @@ git switch -c main
 ### Dev Container Configuration
 
 1. Create a new directory called `.devcontainer` and enter into it with the run the following command `mkdir .devcontainer && cd .devcontainer`.
-2. Create a new file within the `.devcontainer` directory with the following command `touch devcontainer.json`.
-3. Paste the following into the `devcontainer.json` file: 
-```json 
-{
-    "name": "<insert a desired name>",
-    "image": "mcr.microsoft.com/devcontainers/rust:latest",
-    "customizations": {
-        "vscode": {
-            "settings": {},
-            "extensions": ["rust-analyzer"]
-        }
-    }
-}
+2. Run the following command to configure the devcontainer setup:
+```bash
+echo "{\n    \"name\": \"Rust Dev Container\",\n    \"image\": \"mcr.microsoft.com/devcontainers/rust:latest\",\n    \"customizations\": {\n        \"vscode\": {\n            \"settings\": {},\n            \"extensions\": [\n                \"rust-analyzer\"\n            ]\n        }\n    }\n}" > devcontainer.json
+
 ```
 
 ### Opening in VS Code

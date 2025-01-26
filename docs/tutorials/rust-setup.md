@@ -51,8 +51,8 @@ echo "{\n    \"name\": \"Rust Dev Container\",\n    \"image\": \"mcr.microsoft.c
 
 ### Compile and run
 
-1. Check the rust version with the following command `rustc --version`.
-2. Create a new binary rust project without new source control management files by executing the following command `cargo new my_project --vcs none`.
+1. Check the Rust version with the following command `rustc --version`.
+2. Create a new binary Rust project without new source control management files by executing the following command `cargo new my_project --vcs none`.
 3. Overwrite `my_project/src/main.rs` with the following code:
 ```rust
 fn main() {
@@ -65,7 +65,7 @@ fn main() {
 
 ### Comparison to GCC
 
-`cargo build` is to rust what `gcc -o my_program my_program.c`. The build command creates an executable object file at the file path: `./target/debug/my_project`. Instead of executing the compiled rust program with `cargo run`, you may also do `./target/debug/my_project`, similar to running a C program after compiling with GCC: `./my_program`.
+`cargo build` is to Rust what `gcc -o my_program my_program.c` is to C. The build command creates an executable object file at the file path: `./target/debug/my_project`. Instead of executing the compiled Rust program with `cargo run`, you may also do `./target/debug/my_project`, similar to running a C program after compiling with GCC: `./my_program`.
 
 ### Push to GitHub
 - Now execute the following commands to save your changes on GitHub:
@@ -73,6 +73,6 @@ fn main() {
 cd ..
 echo "Rust hello-world program tutorial." > README.md
 git add .
-git commit -m "my first commit. add readme.md and rust files"
+git commit -m "my first commit. add README.md and Rust files"
 git push origin main
 ```

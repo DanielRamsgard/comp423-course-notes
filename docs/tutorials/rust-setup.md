@@ -31,12 +31,12 @@
 git init
 git remote add origin <GitHub repo URL>
 git fetch origin
-git switch main
+git switch -c main
 ```
 
 ### Dev Container Configuration
 
-1. Create a new directory called `.devcontainer` and enter into it with the run the following command `mkdir .devcontainer && cd .devcontainer` for MacOS, Linux, and Windows.
+1. Create a new directory called `.devcontainer` and enter into it with the run the following command `mkdir .devcontainer && cd .devcontainer`.
 2. Create a new file within the `.devcontainer` directory with the following command `touch devcontainer.json`.
 3. Paste the following into the `devcontainer.json` file: 
 ```json 
@@ -55,25 +55,27 @@ git switch main
 ### Opening in VS Code
 
 1. Run `cd ..` to return to the root directory of your project.
-2. If you have VS Code command line tools installed and in your PATH, you may navigate to your root project diretory and run `code .`, which will open the working directory in VS Code. If you do not have VS Code command line tools installed, you may open the directory through the VS Code user-interface.
+2. If you have VS Code command line tools installed and in your PATH, you may run `code .`, which will open the working directory in VS Code. If you do not have VS Code command line tools installed, you may open the directory through the VS Code user-interface.
 3. VS Code should prompt you to open the Docker container associated with the file inside the `.devcontainer` directory. Follow the instructions to open the Docker container.
 
 ### Compile and run
 
 1. Check the rust version with the following command `rustc --version`.
-2. Create a new binary rust project with the following command `cargo new --vcs none` with creating a new Git repo.
-3. Add the following code to the file src/main.rs:
+2. Create a new binary rust project without new source control management files by executing the following command `cargo new my_project --vcs none`.
+3. Overwrite `my_project/src/main.rs` with the following code:
 ```rust
 fn main() {
     println!("Hello COMP423");
 }
 ```
-4. Compile the project with the following command `cargo build`.
-5. You should now see the standard output: `Hello COMP423`.
+4. Enter the project and compile the main file with the following command `cd my_project && cargo build`.
+5. Run the main.rs file with the following command `cargo run`.
+6. You should now see the standard output: `Hello COMP423`.
 
 ### Push to GitHub
 - Now execute the following commands to save your changes on GitHub:
 ```bash
+cd ..
 echo "Rust hello-world program tutorial." > README.md
 git add .
 git commit -m "my first commit. add readme.md and rust files"

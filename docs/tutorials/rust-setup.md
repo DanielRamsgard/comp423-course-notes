@@ -39,7 +39,7 @@ git switch -c main
 1. Create a new directory called `.devcontainer` and enter into it with the run the following command `mkdir .devcontainer && cd .devcontainer`.
 2. Run the following command to configure the devcontainer setup:
 ```bash
-echo "{\n    \"name\": \"Rust Dev Container\",\n    \"image\": \"mcr.microsoft.com/devcontainers/rust:latest\",\n    \"customizations\": {\n        \"vscode\": {\n            \"settings\": {},\n            \"extensions\": [\n                \"rust-analyzer\"\n            ]\n        }\n    }\n}" > devcontainer.json
+echo "{\n    \"name\": \"Rust Dev Container\",\n    \"image\": \"mcr.microsoft.com/devcontainers/rust:latest\",\n    \"customizations\": {\n        \"vscode\": {\n            \"settings\": {},\n            \"extensions\": [\n                \"rust-lang.rust-analyzer\"\n            ]\n        }\n    }\n}" > devcontainer.json
 
 ```
 

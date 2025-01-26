@@ -71,7 +71,7 @@ fn main() {
 - Now execute the following commands to save your changes on GitHub:
 ```bash
 cd ..
-echo "Rust hello-world program tutorial." > README.md
+echo "Rust hello-world program tutorial link: \`https://danielramsgard.github.io/comp423-course-notes/tutorials/rust-setup\`." > README.md
 git add .
 git commit -m "my first commit. add README.md and Rust files"
 git push origin main

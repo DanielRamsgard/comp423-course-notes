@@ -7,15 +7,15 @@
 
 #### Prerequisite Installations
 
-1. Docker Desktop
-2. VS Code
-4. Git
+1. [**Docker Desktop**](https://www.docker.com/products/docker-desktop/)
+2. [**VS Code**](https://code.visualstudio.com/download)
+4. [**Git Documentation**](https://git-scm.com/downloads)
 
 #### Intellectual Prerequisites
 
-1. Basic Knowledge of Rust Syntax
-2. Basic Proficiency of Git Commands
-3. Docker Mental Model
+1. Basic Knowledge of [**Rust Syntax**](https://www.rust-lang.org/learn)
+2. Basic Proficiency of [**Git Commands**](https://git-scm.com/doc)
+3. [**Docker**]() Mental Model
 
 ### Steps
 

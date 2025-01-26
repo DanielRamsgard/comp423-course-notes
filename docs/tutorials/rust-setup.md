@@ -25,7 +25,7 @@
 ### Diretory Setup
 
 1. Run the following command `mkdir <name>` to create a new project directory. Now, enter into that directory by executing `cd <name>`.
-2. Create a new public repo on GitHub and copy the repo URL.
+2. Create a new public repo on GitHub, without adding a README.md file, and copy the repo URL.
 3. Run the following commands to initialize an empty Git repo locally:
 ```bash
 git init

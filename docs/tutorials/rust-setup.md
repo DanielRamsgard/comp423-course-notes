@@ -3,32 +3,38 @@
 * Primary author: [Daniel Ramsgard](https://github.com/DanielRamsgard)
 * Reviewer: [Mani Pourfazli](https://github.com/manip1384)
 
-### Prerequisites
+## Prerequisites
 
-#### Prerequisite Installations
+### Prerequisite Tools
 
 1. [**Docker Desktop**](https://www.docker.com/products/docker-desktop/)
 2. [**VS Code**](https://code.visualstudio.com/download)
-4. [**Git Documentation**](https://git-scm.com/downloads)
+3. [**Git**](https://git-scm.com/downloads)
+4. A [**GitHub**](https://github.com/) Account
 
-#### Intellectual Prerequisites
+### Prerequisite Knowledge
 
 1. Basic Knowledge of [**Rust Syntax**](https://www.rust-lang.org/learn)
 2. Basic Proficiency of [**Git Commands**](https://git-scm.com/doc)
-3. [**Docker**]() Mental Model
+3. [**Docker**](https://docs.docker.com/desktop/) Mental Model
 
-### Steps
+## Steps
 
-#### Notice
+- The reader is expected to run the Bash shell whether they are on MacOS, Linux, or Windows.
 
-The reader is expected to running the Bash shell whether they are on MacOS, Linux, or Windows.
-
-#### Diretory Setup
+### Diretory Setup
 
 1. Run the following command `mkdir <name>` to create a new project directory. Now, enter into that directory by executing `cd <name>`.
-2. To create an empty Git directory, run `git init`.
+2. Create a new public repo on GitHub and copy the repo URL.
+3. Run the following commands to initialize an empty Git repo locally:
+```bash
+git init
+git remote add origin <GitHub repo URL>
+git fetch origin
+git switch main
+```
 
-#### Dev Container Configuration
+### Dev Container Configuration
 
 1. Create a new directory called `.devcontainer` and enter into it with the run the following command `mkdir .devcontainer && cd .devcontainer` for MacOS, Linux, and Windows.
 2. Create a new file within the `.devcontainer` directory with the following command `touch devcontainer.json`.
@@ -40,30 +46,36 @@ The reader is expected to running the Bash shell whether they are on MacOS, Linu
     "customizations": {
         "vscode": {
             "settings": {},
-            "extensions": []
+            "extensions": ["rust-analyzer"]
         }
     }
 }
 ```
 
-#### Opening in VS Code
+### Opening in VS Code
 
 1. Run `cd ..` to return to the root directory of your project.
-2. If you have VS Code command line tools installed, you may navigate to your root project diretory and run `code .`, which will open the working directory in VS Code. If you do not have VS Code command line tools installed, you may open the directory through the VS Code user-interface.
+2. If you have VS Code command line tools installed and in your PATH, you may navigate to your root project diretory and run `code .`, which will open the working directory in VS Code. If you do not have VS Code command line tools installed, you may open the directory through the VS Code user-interface.
 3. VS Code should prompt you to open the Docker container associated with the file inside the `.devcontainer` directory. Follow the instructions to open the Docker container.
 
-#### Create Rust File
+### Compile and run
 
-1. Create the rust file by running the command `touch main.rs`.
-2. Open the newly created file in VS Code and paste in the following code:
+1. Check the rust version with the following command `rustc --version`.
+2. Create a new binary rust project with the following command `cargo new --vcs none` with creating a new Git repo.
+3. Add the following code to the file src/main.rs:
 ```rust
 fn main() {
     println!("Hello COMP423");
 }
 ```
+4. Compile the project with the following command `cargo build`.
+5. You should now see the standard output: `Hello COMP423`.
 
-#### Compile and run
-
-1. Compile your new rust file with the following command `rustc main.rs`.
-2. Run your compiled rust file with the following command `./main`.
-3. You should now see the standard output: `Hello COMP423`.
+### Push to GitHub
+- Now execute the following commands to save your changes on GitHub:
+```bash
+echo "Rust hello-world program tutorial." > README.md
+git add .
+git commit -m "my first commit. add readme.md and rust files"
+git push origin main
+```

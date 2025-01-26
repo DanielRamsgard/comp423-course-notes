@@ -63,6 +63,10 @@ fn main() {
 5. Run the main.rs file with the following command `cargo run`.
 6. You should now see the standard output: `Hello COMP423`.
 
+### Comparison to GCC
+
+`cargo build` is to rust what `gcc -o my_program my_program.c`. The build command creates an executable object file at the file path: `./target/debug/my_project`. Instead of executing the compiled rust program with `cargo run`, you may also do `./target/debug/my_project`, similar to running a C program after compiling with GCC: `./my_program`.
+
 ### Push to GitHub
 - Now execute the following commands to save your changes on GitHub:
 ```bash

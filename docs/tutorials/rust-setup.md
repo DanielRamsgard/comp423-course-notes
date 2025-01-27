@@ -46,6 +46,7 @@ git switch -c main
 echo "{\n    \"name\": \"Rust Dev Container\",\n    \"image\": \"mcr.microsoft.com/devcontainers/rust:latest\",\n    \"customizations\": {\n        \"vscode\": {\n            \"settings\": {},\n            \"extensions\": [\n                \"rust-lang.rust-analyzer\"\n            ]\n        }\n    }\n}" > devcontainer.json
 
 ```
+3. The `devcontainer.json` file specifies a Docker Image from a container registry. When you open a directory that has this configuration, VS Code will run the specified container on your machine, eliminating the "it doesn't work on my machine" issue. Commands are run inside the container, while you interact with files in VS Code on your computer and not insde the container.
 
 ### Opening in VS Code
 

@@ -3,6 +3,10 @@
 * Primary author: [Daniel Ramsgard](https://github.com/DanielRamsgard)
 * Reviewer: [Mani Pourfazli](https://github.com/manip1384)
 
+## Introduction
+
+Welcome to your introduction to Rust! This tutorial will go over how to set up a Rust environment.
+
 ## Prerequisites
 
 ### Prerequisite Tools

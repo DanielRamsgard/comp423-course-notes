@@ -16,11 +16,11 @@ Welcome to your introduction to Rust! This tutorial will go over how to set up a
 3. [**Git**](https://git-scm.com/downloads)
 4. A [**GitHub**](https://github.com/) Account
 
-### Prerequisite Knowledge
-
-1. Basic Knowledge of [**Rust Syntax**](https://www.rust-lang.org/learn)
-2. Basic Proficiency of [**Git Commands**](https://git-scm.com/doc)
-3. [**Docker**](https://docs.docker.com/desktop/) Mental Model
+!!! Note
+    The following concepts are good to know but not strictly necessary to follow the tutorial:
+    basic knowledge of [**Rust Syntax**](https://www.rust-lang.org/learn),
+    basic proficiency of [**Git Commands**](https://git-scm.com/doc),
+    and [**Docker**](https://docs.docker.com/desktop/) mental model.
 
 ## Steps
 
